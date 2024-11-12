@@ -91,12 +91,12 @@ body {
 .imagen-grande14 { position: absolute; width: 130px; left: 660px; top: 100px; }
 .imagen-adicional {
     position: absolute;
-    width: 680px;  /* Ajusta el tamaño de la imagen */
-    height: 170px;  /* Mantiene la relación de aspecto */
-    left: 50%;  /* Centra la imagen horizontalmente */
+    width: 680px;  
+    height: 170px;  
+    left: 50%;  
     top: 475px;
-    bottom: 0;  /* Coloca la imagen en la parte inferior */
-    transform: translateX(-50%);  /* Asegura que se centre perfectamente */
-    z-index: -1;  /* Coloca la imagen detrás de las otras imágenes */
+    bottom: 0;  
+    transform: translateX(-50%);  
+    z-index: -1;  
 }
     
