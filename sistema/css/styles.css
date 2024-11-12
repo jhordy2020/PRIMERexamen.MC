@@ -12,16 +12,16 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* C.entra el cuadro en pantalla */
-    background-image: url('../img/fondonegro.jpg');/*o Aquí pones la ruta de tu imagen */
-    background-size: cover; /* Ajusta la imagen para cubrir el contenedor */
-    background-position: center; /* Centra la imagen */
+    transform: translate(-50%, -50%);
+    background-image: url('../img/fondonegro.jpg');
+    background-size: cover; 
+    background-position: center; 
     color: white;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(187, 180, 180, 0.3);
-    width: 600px; /* Ancho inicial */
-    height: 400px; /* Altura inicial para crecimiento uniforme */
+    width: 600px; 
+    height: 400px; 
     max-width: 100%;
     font-size: 18px; 
 }
