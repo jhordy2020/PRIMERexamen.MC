@@ -1,0 +1,65 @@
+/* Estilo general del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* Fondo claro */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Título centrado y estilizado */
+h2 {
+    text-align: center;
+    color: #333333;
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+/* Contenedor de la tabla */
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #ffffff; /* Fondo blanco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Encabezado de la tabla */
+th {
+    background-color: #4CAF50; /* Verde */
+    color: #ffffff; /* Texto blanco */
+    padding: 12px 15px;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Celdas de la tabla */
+td {
+    padding: 10px 15px;
+    text-align: center;
+    border-bottom: 1px solid #dddddd; /* Línea divisoria */
+    font-size: 14px;
+}
+
+/* Alternar colores de filas */
+tr:nth-of-type(even) {
+    background-color: #f3f3f3; /* Gris claro */
+}
+
+tr:nth-of-type(odd) {
+    background-color: #ffffff;
+}
+
+/* Hover en filas */
+tr:hover {
+    background-color: #d6e4f5; /* Azul claro */
+    cursor: pointer;
+}
+
+/* Última línea más visible */
+tr:last-of-type td {
+    border-bottom: none;
+}
+

@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9fb;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    color: #333;
+}
+
+/* Barra superior */
+.navbar {
+    background-color: #28a745; /* Color verde */
+    color: white;
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Contenido principal */
+.form-container {
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    margin: 100px auto; /* Ajuste para dejar espacio bajo la barra superior */
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+button {
+    background-color: #28a745; /* Color verde */
+    color: white;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #218838; /* Verde más oscuro al pasar el cursor */
+}

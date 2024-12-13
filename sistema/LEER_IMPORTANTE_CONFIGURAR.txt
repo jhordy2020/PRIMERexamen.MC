@@ -1,0 +1,16 @@
+1. Editar el archivo hosts en tu sistema operativo para incluir 127.0.0.1 sistema.test. Hosts: Ve a C:\Windows\System32\drivers\etc\hosts y asegúrate de que la línea que apunta a sistema.test exista. Debería verse algo así:
+makefile
+
+127.0.0.1       sistema.test
+::1             sistema.test
+
+2. Revisar la Configuración de Apache en Laragon: Verifica en C:\laragon\etc\apache2\sites-enabled\auto.sistema.test.conf (o un archivo similar dependiendo de cómo Laragon maneje las configuraciones automáticas). Asegúrate de que el DocumentRoot y ServerName estén configurados correctamente:
+
+<VirtualHost *:80>
+    DocumentRoot "C:/laragon/www/sistema"
+    ServerName sistema.test
+    <Directory "C:/laragon/www/sistema">
+        AllowOverride All
+        Require all granted
+    </Directory>
+</VirtualHost>

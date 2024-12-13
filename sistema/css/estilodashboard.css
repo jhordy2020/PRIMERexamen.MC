@@ -1,0 +1,142 @@
+/* Ajustes generales */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    font-family: Arial, sans-serif;
+}
+
+
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.menu {
+    width: 180px; 
+    background-color: #333;
+    color: #fff;
+    padding: 0px !important;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh; 
+}
+
+.menu h3 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    background-color: #212121;
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+    margin-top: -4px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+}
+
+.menu ul li {
+    position: relative;
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem 1rem;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.menu ul li a:hover,
+.menu ul li a.activo {
+    background-color: rgb(69, 209, 115); /* Color para hover y activo */
+    color: #fff; /* Asegura que el texto sea legible */
+}
+/* Submenú oculto por defecto */
+.submenu, .submenu2 {
+    display: none;
+    background-color: #444;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+.submenu li a, .submenu2 li a {
+    text-align: left; 
+    font-size: 13px;
+    padding-left: 20px;
+}
+
+
+/* Cuando el submenú tiene la clase 'open', se muestra */
+.submenu.open , .submenu2.open{
+    display: flex;
+}
+
+/* ------------------------------------- */
+.usuario-btn, .compras-btn {
+    display: inline-block;
+    color: #fff;
+    background: #333;
+    padding: 8px 12px;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+}
+
+.usuario-btn i, .compras-btn i {
+    display: inline-block;
+    transition: transform 0.3s ease; /* Duración y tipo de transición */
+}
+
+.usuario-btn i, .compras-btn i{
+    transform: rotate(-90deg);
+    opacity: 0.24;
+}
+/* Clase que se aplica al hacer clic para rotar el ícono */
+.usuario-btn i.rotated, .compras-btn i.rotated {
+    transform: rotate(2deg);
+    opacity: 0.8;
+}
+
+/* ------------------------------------- */
+
+/* Indicador visual en el link de Usuario */
+.usuario-toggle a::after {
+    content: " ▼";
+    font-size: 12px;
+}
+
+/* Cuando el submenú está desplegado, cambia el símbolo */
+.submenu.open + .usuario-toggle a::after, .submenu2.open + .usuario-toggle a::after,
+.usuario-toggle.open a::after {
+    content: " ▲";
+}
+
+.contenido {
+    flex: 1;
+    padding: 10px;
+    background-color: #f4f4f4;
+    overflow-y: auto;
+    box-sizing: border-box;
+    height: 100%; /* Asegura que el contenido ocupe toda la altura */
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos dentro del contenido se alineen correctamente */
+}
+
+/* Ajuste del iframe */
+iframe {
+    width: 100%; /* Ajusta el ancho del iframe al contenedor */
+    height: calc(100vh - 40px); /* Resta espacio para márgenes o paddings */
+    border: none;
+}

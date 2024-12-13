@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    width: 90%;
+    height: 90%;
+    background-color: #ffffff; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #333333;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555555;
+    text-align: left;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.form-container input:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+    background-color: #45a049; 
+}
+
+
+.message {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.success {
+    color: #4CAF50; 
+}
+
+.error {
+    color: #FF0000; 
+}
+
+.message {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f9fa; 
+    color: #333; 
+}
+
+
+/* Grupo de entrada con lupa ************************************************* */
+.input-group {
+    display: flex !important; 
+    align-items: center;
+    position: relative;
+    justify-content: flex-end;
+}
+
+.input-group input {
+    flex: 1; /* Permite que el campo de entrada ocupe el ancho disponible */
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.input-group .btn-lupa {
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    width: 10%;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    margin-top: -14px; /* Solapa el borde del input */
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.input-group .btn-lupa:hover {
+    background-color: #45a049;
+}
+
+.input-group .btn-lupa i {
+    pointer-events: none; /* Permite que el botón entero sea clickeable */
+}
+
+
